@@ -1,0 +1,106 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 4vw;
+  background: white !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 8px 12px;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+  color: black;
+}
+
+/* Underline Effect on Hover */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Expand Underline on Hover */
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Ensure Navbar is Always Visible */
+.navbar.transparent {
+  background: white !important;
+  opacity: 1 !important;
+}
+.nav-buttons{
+  display: flex;
+  gap: 1rem;;
+}
+.login{
+  background-color: #54c0d3;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+.nav-buttons .login:hover {
+  background-color: #49abbd;
+  /* transform: scale(1.05); */
+}
+.signup{
+  background-color: rgb(218, 217, 217);
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+.nav-buttons .signup:hover {
+  background-color: rgb(195, 192, 192);
+  /* transform: scale(1.05); */
+}
+
+@media screen and (max-width: 768px) {
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: white;
+    width: 250px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+}

@@ -1,0 +1,137 @@
+/* Sign-Up Page Styling */
+.signup-container {
+    max-width: 320px; /* Compact form */
+    margin: 5rem auto; /* Adjusted margin for proper spacing */
+    padding: 1.5rem;
+    text-align: center;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+    margin-top: 7rem;
+}
+
+/* Title */
+h1 {
+    font-size: 1.6rem; /* Adjusted size for better fit */
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+/* Role Selection */
+.role-selection {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.role-selection button {
+    padding: 8px 14px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #ddd;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.role-selection button.active {
+    background: #4fb0c2;
+    color: white;
+}
+
+.role-selection button:hover {
+    background: #49a6b6;
+    color: white;
+}
+
+/* Sign-Up Form */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-align: left;
+    color: #444;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: #4fb0c2;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(79, 176, 194, 0.5);
+}
+
+/* Sign-Up Button */
+.signup-button {
+    padding: 10px;
+    background: #4fb0c2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.signup-button:hover {
+    background: #3a95a6;
+    transform: scale(1.05);
+}
+
+/* Sign-In Option */
+.signin-option {
+    margin-top: 12px;
+    font-size: 0.85rem;
+    color: #222;
+}
+
+.signin-option span {
+    color: #007bff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* .signin-option span:hover {
+    text-decoration: underline;
+} */
+.login-option:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 480px) {
+    .signup-container {
+        max-width: 90%;
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    .role-selection {
+        flex-direction: column;
+    }
+
+    .role-selection button {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}

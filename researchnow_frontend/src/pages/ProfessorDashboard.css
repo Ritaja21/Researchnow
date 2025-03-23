@@ -1,0 +1,186 @@
+.dashboard-container {
+  max-width: 600px;
+  margin: 5rem auto;
+  padding: 2rem;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  text-align: left;
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.user-info p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+textarea {
+  width: 100%;
+  /* Make it full width */
+  height: 150px;
+  /* Increase the height */
+  resize: vertical;
+  /* Allow users to resize only vertically */
+  padding: 8px;
+  font-size: 16px;
+}
+
+.savebtn,
+.editbtn {
+  background: #f3a8a8;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+
+.savebtn:hover,
+.editbtn:hover {
+  background: #f08585;
+}
+
+.viewbtn {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background: #6C809A;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.viewbtn:hover {
+  background: #4b596b;
+}
+
+/* Explore Projects Button */
+.explore-projects-btn {
+  margin-top: 20px;
+  background: #f3a8a8;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.explore-projects-btn:hover {
+  background: #f08585;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #795663;
+  color: white;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.acceptbtn,
+.rejectbtn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+
+
+.acceptbtn {
+  background-color: #28a745;
+  /* Green for Accept */
+  color: white;
+  margin-bottom: 5px;
+}
+
+.acceptbtn:hover {
+  background-color: #218838;
+}
+
+.rejectbtn {
+  background-color: #dc3545;
+  /* Red for Decline */
+  color: white;
+}
+
+.rejectbtn:hover {
+  background-color: #cc2424;
+}
+
+
+.chatbox h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.chat-input input {
+  margin-top: 0.5rem;
+}
+
+.sendbtn {
+  margin-top: 5px;
+  background: rgb(218, 217, 217);
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.sendbtn:hover {
+  background-color: rgb(195, 192, 192);
+}
