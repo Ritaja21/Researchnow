@@ -35,7 +35,7 @@ server.listen(PORT, () => {
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors());//fuck this
+app.use(cors());
 app.use(cookieParser());
 require('dotenv').config();
 require('./db')
@@ -49,6 +49,6 @@ app.use("/api/students", require("./Routes/studentRoutes"));//view student dashb
 app.use("/api/chat", require("./Routes/chatRoutes"));//get and send chat message
 
 app.get('/', (req, res) => {
-    res.json({ message: 'The API is working' });//useless stuff
+    res.json({ message: 'The API is working' });
 });
 
