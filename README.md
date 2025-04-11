@@ -12,15 +12,15 @@
 - 📂 Dashboards for professors and students to track posts, applications, and collaborations
 - 🧪 **Ongoing Projects Showcase** to inspire and motivate students
 - 🔍 Search and filter research opportunities by skills, field, or duration
-- 📱 Fully responsive and smooth UI powered by **GSAP** and **Locomotive.js**
+- 📱 Fully responsive and smooth UI powered by **GSAP**
 
 ---
 
 ## 🧰 Tech Stack
 
-| Frontend        | Backend           | Database  | Real-Time | Animations/UX     | 
-|----------------|-------------------|-----------|-----------|-------------------|
-| React.js       | Node.js, Express  | MongoDB   | Socket.io | GSAP, Locomotive.js | 
+| Frontend        | Backend           | Database       | Real-Time | Animations/UX     | 
+|----------------|-------------------|-----------------|-----------|-------------------|
+| React.js       | Node.js, Express  | MongoDB Atlas  | Socket.io | GSAP              | 
 
 ---
 
@@ -52,7 +52,7 @@ npm start
 # Frontend setup
 cd ../frontend
 npm install
-npm start
+npm run dev
 ```
 ## 👥 Team
 
